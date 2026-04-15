@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Starter Kit",
+    "description": "Basic resume builder for fresh graduates.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic editing tools",
+      "Export to PDF"
+    ],
+    "icon": "file-text"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume creation with ATS optimization.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Custom sections",
+      "Export to PDF & DOCX"
+    ],
+    "icon": "star"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Pack",
+    "description": "Complete toolkit for job seekers.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Resume builder",
+      "Cover letter generator",
+      "LinkedIn optimization",
+      "Job tracking dashboard"
+    ],
+    "icon": "briefcase"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Create stunning personal portfolios.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "50+ portfolio templates",
+      "Custom domain support",
+      "SEO optimization",
+      "Responsive design"
+    ],
+    "icon": "layout"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep AI",
+    "description": "AI-powered mock interviews and feedback.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Mock interviews",
+      "AI feedback",
+      "Industry-specific questions",
+      "Performance analytics"
+    ],
+    "icon": "mic"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Pro",
+    "description": "Track and manage your job applications efficiently.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Application tracking",
+      "Deadline reminders",
+      "Company insights",
+      "Analytics dashboard"
+    ],
+    "icon": "check-square"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "Tools for freelancers to manage clients and projects.",
+    "price": 59.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Invoice generator",
+      "Client management",
+      "Project tracking",
+      "Payment reminders"
+    ],
+    "icon": "users"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate Career Suite",
+    "description": "All-in-one career development solution.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "All premium features",
+      "Unlimited resumes",
+      "Priority support",
+      "AI career coaching"
+    ],
+    "icon": "rocket"
+  }
+]
