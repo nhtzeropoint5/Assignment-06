@@ -1,6 +1,8 @@
 // import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
+import BannerBot from './components/BannerBot'
+import CardCon from './components/CardCon'
 import Navbar from './components/Navbar'
 
 
@@ -11,6 +13,8 @@ function App() {
     <>
   <Navbar></Navbar>
   <Banner></Banner>
+  <BannerBot></BannerBot>
+  <CardCon></CardCon>
     </>
   )
 }
