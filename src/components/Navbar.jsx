@@ -28,9 +28,12 @@ const Navbar = () => {
                             <ShoppingCart className="w-5 h-5" />
                             Login
                         </button>
-                        <button className="hidden md:inline-block btn gap-2 px-6 py-7 bg-purple-500 text-lg text-white rounded-4xl">
+                        {/* <button className="hidden md:inline-block btn gap-2 px-6 py-7 bg-purple-500 text-lg text-white rounded-4xl">
                             Get Started
-                        </button>
+                        </button> */}
+                        <button className="hidden md:inline-flex btn bg-purple-500 text-white border-none px-6 text-lg rounded-full">
+  Get Started
+</button>
                     </div>
 
                 

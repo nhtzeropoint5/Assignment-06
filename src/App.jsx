@@ -6,6 +6,7 @@ import BannerBot from './components/BannerBot'
 import CardCon from './components/CardCon'
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'
+import GetStarted from './components/GetStarted'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   <BannerBot></BannerBot>
   <CardCon></CardCon>
   <Pricing></Pricing>
+  <GetStarted></GetStarted>
   <Footer></Footer>
     </>
   )
