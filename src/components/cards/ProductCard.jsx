@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Features from './Features';
-
+import { toast } from 'react-toastify';
 
 
 
@@ -21,7 +21,21 @@ import Features from './Features';
 //     "icon": "src/assets/products/design-tool.png"
 //   }
 
-const ProductCard = ({ product, setSelectedProduct, selectedProduct}) => {
+const ProductCard = ({ product, setSelectedProduct, selectedProduct, totalCart, setTotalCart}) => {
+
+
+    const [isSelected, setIsSelected] = useState(false);  
+
+
+    const handleChoosedProduct = () =>{
+    const price = product.price;
+    toast.success('Product is selected');
+    setTotalCart(totalCart + price);
+    setIsSelected(true);
+    setSelectedProduct([...selectedProduct, product]);
+
+    }
+
     return (
 
         // ${product.tagType ==="best seller" ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white' : 
@@ -43,7 +57,7 @@ const ProductCard = ({ product, setSelectedProduct, selectedProduct}) => {
         </div>
   
 
-<div className='text-left flex flex-col'><h2 className="text-3xl font-bold ">{product.name}</h2>
+<div className='text-left flex flex-col'><h2 className="text-2xl md:text-3xl font-bold">{product.name}</h2>
      <p className={`text-lg text-gray-500 leading-8`}>{product.description}</p>
 </div>
     <div className="flex justify-between">
@@ -52,13 +66,13 @@ const ProductCard = ({ product, setSelectedProduct, selectedProduct}) => {
     </div>
 
 
-    <ul className="mt-6 flex flex-col gap-2 text-lg text-left">
+    <ul className="mt-6 flex flex-col gap-2 text-lg text-left h-40">
       {
         product.features.map(feature =>(<Features feature={feature}></Features>))
       }
     </ul>
     <div className="mt-6">
-      <button className={`btn btn-primary btn-block text-lg rounded-4xl py-5 px-8`}>Buy Now</button>
+      <button onClick={handleChoosedProduct} className="btn btn-primary btn-block text-lg rounded-4xl py-5 px-8" disabled = {isSelected ? true : false }> {isSelected ? 'Added to Cart' : 'Buy Now'}</button>
     </div>
   </div>
 </div>

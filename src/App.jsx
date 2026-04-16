@@ -18,23 +18,25 @@ import { ToastContainer } from 'react-toastify'
   }
 
 
-function App() {
-  // const [count, setCount] = useState(0)
+const promiseProducts = fetchProducts();
 
-  const promiseProducts = fetchProducts();
+function App() {
+  const [totalCart, setTotalCart] = useState(0);
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
   return (
     <>
-  <Navbar></Navbar>
+  <Navbar selectedProduct={selectedProduct}></Navbar>
   <Banner></Banner>
   <BannerBot></BannerBot>
   <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-  <ProCardCon promise = {promiseProducts}></ProCardCon>
+  <ProCardCon promise = {promiseProducts} totalCart={totalCart} setTotalCart={setTotalCart} selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}></ProCardCon>
   </Suspense>
   <CardCon></CardCon>
   <Pricing></Pricing>
   <GetStarted></GetStarted>
   <Footer></Footer>
+  <ToastContainer></ToastContainer>
     </>
   )
 }

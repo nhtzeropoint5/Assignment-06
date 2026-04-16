@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ShoppingCart, Menu, X } from 'lucide-react';
 
 
-const Navbar = () => {
+const Navbar = ({selectedProduct}) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -25,7 +25,14 @@ const Navbar = () => {
               
                     <div className="flex items-center gap-4">
                         <button className="flex items-center gap-3 text-lg">
-                            <ShoppingCart className="w-5 h-5" />
+                            <div className="relative">
+                                <ShoppingCart className="w-5 h-5" />
+                                {selectedProduct.length > 0 && (
+                                    <span className="absolute -top-2 -right-2 bg-purple-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                                        {selectedProduct.length}
+                                    </span>
+                                )}
+                            </div>
                             Login
                         </button>
                         {/* <button className="hidden md:inline-block btn gap-2 px-6 py-7 bg-purple-500 text-lg text-white rounded-4xl">

@@ -9,7 +9,7 @@ const Banner = () => {
         
         <div className='py-12 md:py-20 px-6 md:px-20 lg:px-40 flex flex-col md:flex-row items-center justify-between gap-10'>
         <div className='child-left md:flex-2 space-y-9 text-center md:text-left'>
-        <button className="btn flex items-center gap-3 px-6 md:px-9 py-6 md:py-8 bg-[#E1E7FF] rounded-4xl text-lg md:text-2xl text-purple-500 overflow-hidden">
+        <button className="btn flex items-center gap-3 px-9 py-8 bg-[#E1E7FF] rounded-4xl text-md md:text-2xl text-purple-500 overflow-hidden">
   <div className="logo-animation">
     <div className="inner-dot"></div>
   </div>
