@@ -11,7 +11,7 @@ const PriceCard = ({purple}) => {
   
 
 <div className='text-left flex flex-col'><h2 className="text-3xl font-bold ">Premium</h2>
-     <p className={`text-lg ${purple ? `text-white` : ` text-gray-400`} leading-8`}>habijabi habijabi</p>
+     <p className={`text-lg ${purple ? `text-white` : ` text-gray-400`} leading-8`}>best quality product</p>
 </div>
     <div className="flex justify-between">
      

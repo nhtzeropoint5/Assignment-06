@@ -15,11 +15,11 @@ const Navbar = ({selectedProduct}) => {
 
           
         <div className='hidden md:flex items-center gap-6 text-lg'>
+             <a href="#">Products</a>
+             <a href="#">Features</a>
              <a href="#">Pricing</a>
-             <a href="#">Pricing</a>
-             <a href="#">Pricing</a>
-             <a href="#">Pricing</a>
-             <a href="#">Pricing</a>
+             <a href="#">Testimonials</a>
+             <a href="#">FAQ</a>
         </div>
 
               
@@ -52,11 +52,11 @@ const Navbar = ({selectedProduct}) => {
   
                 {menuOpen && (
                     <div className="md:hidden flex flex-col items-center gap-4 mt-4 text-lg">
+                        <a href="#">Products</a>
+                        <a href="#">Features</a>
                         <a href="#">Pricing</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Pricing</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">FAQ</a>
                       
                         <button className="btn px-6 py-3 bg-purple-500 text-white rounded-4xl w-full">
                             Get Started
