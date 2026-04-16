@@ -1,16 +1,16 @@
-# React + Vite
+# Assignment-06
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a part of my learning journey with programming hero. I got to know how to use react propperly through this project. The Product data is fetched from a json file and then the functionalities of toggling button states, adding products to the cart and removing them was acheived via react useState(). The notifications were designed with the help of react toastify
 
-Currently, two official plugins are available:
+## Technology Stack
+React.js \\
+Tailwind CSS, DaisyUI \\ 
+JavaScript (ES6+) \\ 
+React-Toastify (NPM Package) \\ 
+JSON (for product data) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3 Features
+1. Duplicate Control on Cart
+2. Filtering when products are selected or removed
+3. Toggling between button states depending on which is being used
